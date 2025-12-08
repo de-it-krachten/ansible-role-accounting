@@ -1,0 +1,11 @@
+---
+
+# List of packages
+accounting_packages:
+  - acct
+
+# Service to start
+accounting_service: acct
+
+# Accounting file
+accounting_file: /var/log/account/pacct
