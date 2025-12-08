@@ -1,0 +1,11 @@
+---
+
+# List of packages
+accounting_packages:
+  - psacct
+
+# Service to start
+accounting_service: psacct
+
+# Accounting file
+accounting_file: /var/account/pacct
