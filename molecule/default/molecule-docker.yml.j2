@@ -12,7 +12,7 @@ lint: |
   rm -f requirements.yml
 platforms:
 {% for platform in MOLECULE_DISTROS %}
-  - name: acounting-{{ platform.name }}-node1
+  - name: accounting-{{ platform.name }}-node1
     image: "{{ platform.image }}"
 {% if platform.kernel_memory is defined %}
     kernel_memory: {{ platform.kernel_memory }}
@@ -35,7 +35,7 @@ platforms:
 {% if platform.networks is defined %}
     networks:
 {% for network in platform.networks %}
-      - name: acounting-{{ network }}
+      - name: accounting-{{ network }}
 {% endfor %}
 {% endif %}
 {% if platform.ports is defined %}

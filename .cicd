@@ -3,8 +3,8 @@
 # Generic
 generic:
   org: deitkrachten
-  role: ansible-role-acounting
-  role_short: acounting
+  role: ansible-role-accounting
+  role_short: accounting
   role_description: |
     <put description in .cicd.overwrite>
 
@@ -1015,9 +1015,9 @@ platforms_overwrite: {}
 
 # Ansible galaxy
 galaxy:
-  role_name: acounting
+  role_name: accounting
   namespace: de_it_krachten
-  description: acounting
+  description: accounting
   author: Mark van Huijstee
   company: De IT Krachten BV
   license: MIT
@@ -1052,7 +1052,7 @@ github:
   fail_fast: false
   parallel: true
   owner: de-it-krachten
-  repo: ansible-role-acounting
+  repo: ansible-role-accounting
   # https://docs.ansible.com/ansible/latest/reference_appendices/release_and_maintenance.html
   image: ubuntu2204
   lint_matrix:
