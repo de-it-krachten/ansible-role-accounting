@@ -4,6 +4,6 @@
   hosts: all
   become: "yes"
   tasks:
-    - name: Include role 'ansible-role-acounting'
+    - name: Include role 'ansible-role-accounting'
       ansible.builtin.include_role:
-        name: ansible-role-acounting
+        name: ansible-role-accounting

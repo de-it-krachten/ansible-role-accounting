@@ -1,7 +1,7 @@
-[![CI](https://github.com/de-it-krachten/ansible-role-acounting/workflows/CI/badge.svg?event=push)](https://github.com/de-it-krachten/ansible-role-acounting/actions?query=workflow%3ACI)
+[![CI](https://github.com/de-it-krachten/ansible-role-accounting/workflows/CI/badge.svg?event=push)](https://github.com/de-it-krachten/ansible-role-accounting/actions?query=workflow%3ACI)
 
 
-# ansible-role-acounting
+# ansible-role-accounting
 
 Setup process accounting
 
@@ -95,11 +95,11 @@ accounting_file: /var/log/account/pacct
 ## Example Playbook
 ### molecule/default/converge.yml
 <pre><code>
-- name: sample playbook for role 'acounting'
+- name: sample playbook for role 'accounting'
   hosts: all
   become: 'yes'
   tasks:
-    - name: Include role 'acounting'
+    - name: Include role 'accounting'
       ansible.builtin.include_role:
-        name: acounting
+        name: accounting
 </pre></code>

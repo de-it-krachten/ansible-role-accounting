@@ -2,8 +2,8 @@
 
 # Generic
 generic:
-  role: ansible-role-acounting
-  role_short: acounting
+  role: ansible-role-accounting
+  role_short: accounting
   role_description: |
     Setup process accounting
   collections: []
