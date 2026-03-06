@@ -46,7 +46,7 @@ jobs:
         with:
           path: "${{ github.repository }}"
 
-      - name: Set up Python 3.
+      - name: Set up Python3.
         uses: actions/setup-python@v5
         with:
           python-version: "${{ matrix.python }}"
@@ -240,6 +240,15 @@ jobs:
             python: "3.12"
             hetznercloud: False
 
+          - name: opensuse16
+            runs_on: ubuntu-22.04
+            distro: opensuse16
+            playbook: converge.yml
+            ansible: "ansible-core>2.18,<2.19"
+            ansible_lint: "ansible-lint"
+            python: "3.13"
+            hetznercloud: False
+
           - name: debian11
             runs_on: ubuntu-22.04
             distro: debian11
@@ -312,11 +321,19 @@ jobs:
           path: "${{ github.repository }}"
 
 
-      - name: Set up Python 3.
+      - name: Set up Python3.
         uses: actions/setup-python@v5
         with:
           python-version: "${{ matrix.python }}"
 
+
+      - name: Configure deployment key
+        run: |
+          [[ ! -d ~/.ssh ]] && mkdir -m 700 ~/.ssh
+          echo "$DEPLOYMENT_KEY" | base64 -d > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+        env:
+          DEPLOYMENT_KEY: ${{ secrets.DEPLOYMENT_KEY }}
 
       - name: Show runner info
         run: |
