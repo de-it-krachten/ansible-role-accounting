@@ -1,3 +1,11 @@
+# [1.2.0](https://github.com/de-it-krachten/ansible-role-accounting/compare/v1.1.0...v1.2.0) (2026-03-15)
+
+
+### Features
+
+* Drop support for openSUSE Leap 15 ([e3dbe93](https://github.com/de-it-krachten/ansible-role-accounting/commit/e3dbe9341e1d6db5f97010e686d34b2fd74896e2))
+* Drop support for SUSE Linux Enterprise 15 ([6285339](https://github.com/de-it-krachten/ansible-role-accounting/commit/6285339857023d9907194566e534a516fb10c82c))
+
 # [1.1.0](https://github.com/de-it-krachten/ansible-role-accounting/compare/v1.0.1...v1.1.0) (2026-03-14)
 
 
