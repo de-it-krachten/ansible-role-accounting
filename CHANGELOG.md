@@ -1,3 +1,17 @@
+# [1.3.0](https://github.com/de-it-krachten/ansible-role-accounting/compare/v1.2.0...v1.3.0) (2026-07-23)
+
+
+### Bug Fixes
+
+* Standarize vars.yml ([6dbba2c](https://github.com/de-it-krachten/ansible-role-accounting/commit/6dbba2c86ef8458f05fb2949713e13cdba6e104b))
+
+
+### Features
+
+* Added support for Fedora 44 ([cb2d16a](https://github.com/de-it-krachten/ansible-role-accounting/commit/cb2d16a58ed19de60198d120fd0ad973d359ba96))
+* Added support for Ubuntu 26.04 LTS ([b3c152c](https://github.com/de-it-krachten/ansible-role-accounting/commit/b3c152cc0bd744246f5a984a04036b3b543cedc1))
+* Drop support for Fedora 42 ([90ce47a](https://github.com/de-it-krachten/ansible-role-accounting/commit/90ce47ac7d8ea0a7682b398351561796e3a13c0c))
+
 # [1.2.0](https://github.com/de-it-krachten/ansible-role-accounting/compare/v1.1.0...v1.2.0) (2026-03-15)
 
 
