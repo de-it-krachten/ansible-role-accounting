@@ -10,5 +10,6 @@ generic:
 
 # Molecule
 molecule:
+  driver: docker
   requirements:
     roles_extra: []
