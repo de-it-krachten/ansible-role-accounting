@@ -10,5 +10,7 @@ generic:
 
 # Molecule
 molecule:
+  driver: docker
+  rootless: false
   requirements:
     roles_extra: []
