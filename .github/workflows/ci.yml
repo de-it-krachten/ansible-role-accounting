@@ -57,6 +57,11 @@ jobs:
         with:
           path: "${{ github.repository }}"
 
+      - name: Set up Python3.
+        uses: actions/setup-python@v6
+        with:
+          python-version: "${{ matrix.python }}"
+
       - name: Generate installation token
         if: env.APP_PRIVATE_KEY != ''
         id: app-token
@@ -67,12 +72,8 @@ jobs:
 
       - name: Export token for all subsequent steps
         if: env.APP_PRIVATE_KEY != ''
-        run: echo "GH_TOKEN=${{ steps.app-token.outputs.token }}" >> "$GITHUB_ENV"
-
-      - name: Set up Python3.
-        uses: actions/setup-python@v6
-        with:
-          python-version: "${{ matrix.python }}"
+        run: |
+          echo "GH_TOKEN=${{ steps.app-token.outputs.token }}" >> "$GITHUB_ENV"
 
 
       - name: Show runner info
