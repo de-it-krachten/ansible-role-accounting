@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/de-it-krachten/ansible-role-accounting/compare/v1.3.0...v1.4.0) (2026-10-13)
+
+
+### Features
+
+* Drop support for Debian 11 (Bullseye) ([c8dabf9](https://github.com/de-it-krachten/ansible-role-accounting/commit/c8dabf98684030936a8f04fba9e82be410840d25))
+
 # [1.3.0](https://github.com/de-it-krachten/ansible-role-accounting/compare/v1.2.0...v1.3.0) (2026-07-23)
 
 
